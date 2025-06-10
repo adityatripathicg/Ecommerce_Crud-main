@@ -9,7 +9,7 @@ export default defineConfig({
       '/auth': 'http://localhost:5000',
       '/product': 'http://localhost:5000',
     }
-  }
+  }, // <-- This comma was missing
   build: {
     outDir: '../backend/public',
     emptyOutDir: true
