@@ -1,13 +1,19 @@
 {
-    "name": "ecommerce-crud",
-    "version": "1.0.0",
-    "private": true,
-    "scripts": {
-        "server": "cd backend && npm start",
-        "client": "cd frontend && npm start",
-        "dev": "concurrently \"npm run server\" \"npm run client\""
-    },
-    "devDependencies": {
-        "concurrently": "^8.2.2"
-    }
+  "name": "ecommerce-crud",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "cd backend && npm install && npm start",
+    "build": "cd frontend && npm install && npm run build",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "render-build": "npm install && npm run build"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": "18.x"
+  }
 }

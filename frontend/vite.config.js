@@ -10,4 +10,8 @@ export default defineConfig({
       '/product': 'http://localhost:5000',
     }
   }
+  build: {
+    outDir: '../backend/public',
+    emptyOutDir: true
+  }
 })
